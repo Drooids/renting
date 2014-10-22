@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Home - Saigon  1.0</title>
+		
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		
+	<!-- bootstrap framework-->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<!-- todc-bootstrap -->
+		<link rel="stylesheet" href="css/todc-bootstrap.min.css">
+	<!-- font awesome -->        
+		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<!-- flag icon set -->        
+		<link rel="stylesheet" href="img/flags/flags.css">
+	<!-- retina ready -->
+		<link rel="stylesheet" href="css/retina.css">	
+	
+	<!-- aditional stylesheets -->
+        <!-- fullcalendar -->
+			<link rel="stylesheet" href="js/lib/fullcalendar/fullcalendar.css">
+		<!-- linecons -->        
+			<link rel="stylesheet" href="css/linecons/style.css">
+
+	<!-- ebro styles -->
+		<link rel="stylesheet" href="css/style.css">
+	<!-- ebro theme -->
+		<link rel="stylesheet" href="css/theme/color_1.css" id="theme">
+		
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+		<script src="js/ie/html5shiv.js"></script>
+		<script src="js/ie/respond.min.js"></script>
+		<script src="js/ie/excanvas.min.js"></script>
+	<![endif]-->
+
+	<!-- custom fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+			
+	</head>
+	<body class="boxed pattern_1 sidebar_hidden">
+		
+		<div id="wrapper_all">
+			<header id="top_header">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6 col-sm-2">
+							<a href="index.html" class="logo_main" title="Home - Saigon "><img src="img/logo_main.png" alt=""></a>
+						</div>
+						<div class="col-sm-push-4 col-sm-3 text-right hidden-xs">
+							<div class="notification_dropdown dropdown">
+								<a href="#" class="notification_icon dropdown-toggle" data-toggle="dropdown">
+									<span class="label label-danger">8</span>
+									<i class="icon-comment-alt icon-2x"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="dropdown_heading">Comments</div>
+										<div class="dropdown_content">
+											<ul class="dropdown_items">
+												<li>
+													<h3><span class="small_info">12:43</span><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet&hellip;</p>
+												</li>
+												<li>
+													<h3><span class="small_info">Today</span><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet&hellip;</p>
+												</li>
+												<li>
+													<h3><span class="small_info">14 Aug</span><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet&hellip;</p>
+												</li>
+											</ul>
+										</div>
+										<div class="dropdown_footer"><a href="#" class="btn btn-sm btn-default">Show all</a></div>
+									</li>
+								</ul>
+							</div>
+							<div class="notification_separator"></div>
+							<div class="notification_dropdown dropdown">
+								<a href="#" class="notification_icon dropdown-toggle" data-toggle="dropdown">
+									<span class="label label-danger">12</span>
+									<i class="icon-envelope-alt icon-2x"></i>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-wide">
+									<li>
+										<div class="dropdown_heading">Messages</div>
+										<div class="dropdown_content">
+											<ul class="dropdown_items">
+												<li>
+													<h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+													<p class="large_info">Sean Walter, 24.05.2014</p>
+													<i class="icon-exclamation-sign indicator"></i>
+												</li>
+												<li>
+													<h3><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aliquam assumenda&hellip;</p>
+													<p class="large_info">Sean Walter, 24.05.2014</p>
+												</li>
+												<li>
+													<h3><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet, consectetur&hellip;</p>
+													<p class="large_info">Sean Walter, 24.05.2014</p>
+													<i class="icon-exclamation-sign indicator"></i>
+												</li>
+											</ul>
+										</div>
+										<div class="dropdown_footer">
+											<a href="#" class="btn btn-sm btn-default">Show all</a>
+											<div class="pull-right dropdown_actions">
+												<a href="#"><i class="icon-refresh"></i></a>
+												<a href="#"><i class="icon-cog"></i></a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-push-4 col-sm-3">
+							<div class="pull-right dropdown">
+								<a href="#" class="user_info dropdown-toggle" title="Jonathan Hay" data-toggle="dropdown">
+									<img src="img/user_avatar.png" alt="">
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="user_profile.html">Profile</a></li>
+									<li><a href="javascript:void(0)">Another action</a></li>
+									<li><a href="login_page.html">Log Out</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-pull-6 col-sm-4">
+							<form class="main_search">
+								<input type="text" id="search_query" name="search_query" class="typeahead form-control">
+								<button type="submit" class="btn btn-primary btn-xs"><i class="icon-search icon-white"></i></button>
+							</form> 
+						</div>
+					</div>
+				</div>
+			</header>						
+			<nav id="top_navigation">
+				<div class="container">
+					<ul id="icon_nav_h" class="top_ico_nav clearfix">
+						<li>
+							<a href="#">
+								<i class="icon-home icon-2x"></i>
+								<span class="menu_label">Home</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<span class="label label-danger">12</span>
+								<i class="icon-group icon-2x"></i>
+								<span class="menu_label">Clients</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<span class="label label-danger">2</span>
+								<i class="icon-group icon-2x"></i>
+								<span class="menu_label">Proprios</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<span class="label label-danger">4</span>
+								<i class="icon-group icon-2x"></i>
+								<span class="menu_label">Locataires</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<span class="label label-success">$2 347</span>
+								<i class="icon-tags icon-2x"></i>
+								<span class="menu_label">Finance</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<i class="icon-calendar icon-2x"></i>
+								<span class="menu_label">Calendar</span>
+							</a>
+						</li>
+						<li>             
+							<a href="#">
+								<i class="icon-wrench icon-2x"></i>
+								<span class="menu_label">Settings</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- mobile navigation -->
+			<nav id="mobile_navigation"></nav>
+                
+			<section class="container clearfix main_section">
+				<div id="main_content_outer" class="clearfix">
+					<div id="main_content">
+						
+						<!-- main content -->
+						
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="box_stat box_pos">
+									<img src="img/blank.png" alt="" class="img_ind">
+									<h4>1 045$</h4>
+									<small>Renting (7 days)</small>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="box_stat box_neg">
+									<img src="img/blank.png" alt="" class="img_ind">
+									<h4>5 000$</h4>
+									<small>Sale (7 days)</small>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="box_stat box_neg">
+									<img src="img/blank.png" alt="" class="img_ind">
+									<h4>34</h4>
+									<small>New users (7 days)</small>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="box_stat peity_chart">
+									<div class="peity_wrapper">
+										<div class="peity_bar_down">9,6,7,4,6,3</div>
+									</div>
+									<h4>135</h4>
+									<small>Visit (24h)</small>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">Visitor</h4>
+									</div>
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-sm-8">
+												<div id="world_map_vector" style="width:100%;height:300px">
+													<script>
+														countries_data = {
+															"US": 2320,
+															"BR": 1945,
+															"IN": 1779,
+															"AU": 1486,
+															"TR": 1024,
+															"CN": 753
+														};  
+													</script>
+												</div>
+											</div>
+											<div class="col-sm-4">
+												<table class="table table-striped">
+													<thead>
+														<tr>
+															<th>Country</th>
+															<th class="col_small col_center">Visits</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td><a href="#">United States</a></td>
+															<td class="col_center">2320</td>
+														</tr>
+														<tr>
+															<td><a href="#">Brazil</a></td>
+															<td class="col_center">1945</td>
+														</tr>
+														<tr>
+															<td><a href="#">India</a></td>
+															<td class="col_center">1779</td>
+														</tr>
+														<tr>
+															<td><a href="#">Australia</a></td>
+															<td class="col_center">1486</td>
+														</tr>
+														<tr>
+															<td><a href="#">Turkey</a></td>
+															<td class="col_center">1024</td>
+														</tr>
+														<tr>
+															<td><a href="#">China</a></td>
+															<td class="col_center">753</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">New Users</h4>
+									</div>
+									<div class="panel-body stat_wide">
+										<div class="row">
+											<div class="col-sm-4">
+												<div class="media">
+													<img alt="" src="img/avatars/avatar_4.jpg" class="media-object img-thumbnail pull-left">
+													<div class="media-body">
+														<h3><a href="#">Sean Walter</a></h3>
+														<p><span class="text-muted">Joined:</span> 12-08-2013</p>
+														<p><span class="text-muted">Country:</span> <i class="flag-BR" title="Brazil"></i></p>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-4">
+												<div class="media">
+													<img alt="" src="img/avatars/avatar_7.jpg" class="media-object img-thumbnail pull-left">
+													<div class="media-body">
+														<h3><a href="#">Edyth Nienow</a></h3>
+														<p><span class="text-muted">Joined:</span> 11-08-2013</p>
+														<p><span class="text-muted">Country:</span> <i class="flag-US" title="United States of America"></i></p>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-4">
+												<div class="media">
+													<img alt="" src="img/avatars/avatar_6.jpg" class="media-object img-thumbnail pull-left">
+													<div class="media-body">
+														<h3><a href="#">Brody Renner</a></h3>
+														<p><span class="text-muted">Joined:</span> 11-08-2013</p>
+														<p><span class="text-muted">Country:</span> <i class="flag-CN" title="China"></i></p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-4">
+												<div class="media">
+													<img alt="" src="img/avatars/avatar_14.jpg" class="media-object img-thumbnail pull-left">
+													<div class="media-body">
+														<h3><a href="#">Diego Cormier</a></h3>
+														<p><span class="text-muted">Joined:</span> 10-08-2013</p>
+														<p><span class="text-muted">Country:</span> <i class="flag-GB" title="United Kingdom"></i></p>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-4">
+												<div class="media">
+													<img alt="" src="img/avatars/avatar_17.jpg" class="media-object img-thumbnail pull-left">
+													<div class="media-body">
+														<h3><a href="#">Aimee Nolan</a></h3>
+														<p><span class="text-muted">Joined:</span> 09-08-2013</p>
+														<p><span class="text-muted">Country:</span> <i class="flag-FR" title="France"></i></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-12">
+								<h4 class="heading_a">Calendar of the agency</h4>
+								<div class="panel panel-default">
+									<div class="panel-heading"></div>
+									<div id="calendar_phases"></div>
+								</div>
+								
+							</div>
+						</div>
+						
+
+					</div>
+				</div>
+
+				<nav id="sidebar">
+					<ul id="icon_nav_v" class="side_ico_nav">
+						<li>
+							<a href="#" title="Dashboard"><i class="icon-home"></i></a>
+						</li>
+						<li>             
+							<a href="#" title="Content"><i class="icon-edit"></i></a>
+						</li>
+						<li>             
+							<a href="#" title="Users"><i class="icon-group"></i></a>
+						</li>
+						<li>             
+							<a href="#"><i class="icon-tasks"></i></a>
+						</li>
+						<li class="active">             
+							<a href="#"><i class="icon-beaker"></i></a>
+						</li>
+						<li>             
+							<a href="#"><i class="icon-book"></i></a>
+						</li>
+						<li>             
+							<a href="#"><i class="icon-tag"></i></a>
+						</li>
+						<li>             
+							<a href="#"><i class="icon-wrench"></i></a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+			<div id="footer_space"></div>
+		</div>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        &copy; 2013 Home Saigon by Rebmann Guillaume
+                    </div>
+                    <div class="col-sm-8">
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li>&middot;</li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li>&middot;</li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li>&middot;</li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-1 text-right">
+                        <small class="text-muted">v1.0</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+	<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+	<!-- bootstrap framework -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- jQuery resize event -->
+		<script src="js/jquery.ba-resize.min.js"></script>
+	<!-- jquery cookie -->
+		<script src="js/jquery_cookie.min.js"></script>
+	<!-- retina ready -->
+		<script src="js/retina.min.js"></script>
+	<!-- tinyNav -->
+		<script src="js/tinynav.js"></script>
+	<!-- sticky sidebar -->
+		<script src="js/jquery.sticky.js"></script>
+	<!-- Navgoco -->
+		<script src="js/lib/navgoco/jquery.navgoco.min.js"></script>
+	<!-- jMenu -->
+		<script src="js/lib/jMenu/js/jMenu.jquery.js"></script>
+	<!-- typeahead -->
+        <script src="js/lib/typeahead.js/typeahead.min.js"></script>
+        <script src="js/lib/typeahead.js/hogan-2.0.0.js"></script>
+	
+		<script src="js/ebro_common.js"></script>
+
+
+		<!-- jQueryUi -->
+			<script src="js/lib/jquery_ui/jquery-ui-1.10.3.custom.min.js"></script>
+		<!-- peity (small charts) -->
+			<script src="js/lib/peity/jquery.peity.min.js"></script>
+		<!-- vector map -->
+			<script src="js/lib/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+			<script src="js/lib/jvectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+		<!-- charts -->
+			<script src="js/lib/flot/jquery.flot.min.js"></script>
+			<script src="js/lib/flot/jquery.flot.time.min.js"></script>
+			<script src="js/lib/flot/jquery.flot.tooltip.min.js"></script>
+			<script src="js/lib/flot/jquery.flot.resize.min.js"></script>
+		<!-- fullcalendar -->
+			<script src="js/lib/fullcalendar/fullcalendar.js"></script>
+		<!-- easy pie chart -->
+			<script src="js/lib/easy-pie-chart/jquery.easy-pie-chart.js"></script>
+		<!-- jqueryUI -->
+			<script src="js/lib/jquery_ui/jquery-ui-1.10.3.custom.min.js"></script>
+		<!-- fullcalendar -->
+			<script src="js/lib/fullcalendar/fullcalendar.js"></script>
+			<script src="js/lib/fullcalendar/gcal.js"></script>
+			
+			
+		<!-- Function of the page -->
+			<script src="js/pages/ebro_dashboard1.js"></script>
+			<script src="js/pages/ebro_calendar.js"></script>
+
+
+	<!--[if lte IE 9]>
+		<script src="js/ie/jquery.placeholder.js"></script>
+		<script>
+			$(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	
+    
+	</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<?php
+$id = date('Y-m-d H:i:s');
+?>
+ <!--
+ * Markup for jQuery Joyride Plugin 2.0.2
+ * www.ZURB.com/playground
+ * Copyright 2011, ZURB
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ -->
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Joyride Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Attach our CSS -->
+    <link rel="stylesheet" href="css/joyride-2.0.3.css">
+    <link rel="stylesheet" href="css/demo-style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="management/css/plugins/jquery.plupload.queue.css">
+    <link rel="stylesheet" href="management/css/plugins/jquery.ui.plupload.css">
+    <style type="text/css">
+.btn.btn-alt.btn-small {
+    padding: 4px 10px;
+}
+.btn.btn-alt.btn-primary {
+    background-color: #5A9EC0;
+    background-image: linear-gradient(to bottom, #5A9EC0, #3A87AD);
+    background-repeat: repeat-x;
+    border: medium none;
+    box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 1px 2px rgba(0, 0, 0, 0.6);
+    color: #FFFFFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.btn.btn-alt.btn-success {
+    background-color: #5EA35F;
+    background-image: linear-gradient(to bottom, #5EA35F, #468847);
+    background-repeat: repeat-x;
+    border: medium none;
+    box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 1px 2px rgba(0, 0, 0, 0.6);
+    color: #FFFFFF;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.btn.btn-alt {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(to bottom, #FFFFFF, #F7F7F7);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.25);
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: none;
+    border-width: medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(255, 255, 255, 0.3) inset;
+    color: #555555;
+    padding: 5px 15px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.btn:first-child {
+}
+.btn-primary {
+    background-color: #4A96BC;
+    background-image: linear-gradient(to bottom, #54A0C6, #3A87AD);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.btn {
+    border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+}
+.btn-small {
+    border-radius: 3px 3px 3px 3px;
+    font-size: 11.9px;
+    padding: 2px 10px;
+}
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: #BBBBBB #BBBBBB #A2A2A2;
+    border-image: none;
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+a {
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+
+.plupload_button {
+    background: url("management/img/buttons.png") no-repeat scroll 0 center #F3F3F3;
+    border: 1px solid #BABABA;
+    border-radius: 3px 3px 3px 3px;
+    color: #42454A;
+    display: inline-block;
+    font: 12px sans-serif;
+    margin-right: 4px;
+    outline: 0 none;
+    padding: 2px 8px 3px 20px;
+    text-decoration: none;
+}
+.plupload_button:hover {
+    color: #000000;
+    text-decoration: none;
+}
+.plupload_disabled, a.plupload_disabled:hover {
+    background: url("management/img/buttons-disabled.png") no-repeat scroll 0 center #EDEDED;
+    border-color: #C5C5C5;
+    color: #737373;
+    cursor: default;
+}
+.plupload_add {
+    background-position: -181px center;
+}
+/* jQuery plupload */
+.plupload .plupload_wrapper {
+  font-family: 'PT Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.plupload .plupload_header {
+  display: none;
+}
+.plupload .plupload_container,
+.plupload .plupload_filelist_header,
+.plupload .plupload_filelist_footer {
+  padding: 0;
+  background: none;
+}
+.plupload .plupload_filelist_header,
+.plupload .plupload_filelist_footer {
+  color: #e5e5e5;
+  font-weight: bold;
+  padding: 15px 0;
+  font-size: 16px;
+  border: none;
+  border-color: transparent;
+}
+.plupload .plupload_filelist_footer {
+  height: auto;
+}
+.plupload .plupload_filelist_footer .plupload_buttons .btn + .btn {
+  margin-left: 5px;
+}
+.plupload .plupload_file_status,
+.plupload .plupload_file_status span {
+  color: #e5e5e5;
+}
+.plupload .plupload_file_name {
+  padding: 0;
+}
+.plupload .plupload_scroll {
+  overflow: visible;
+  height: auto;
+  width: auto;
+}
+.plupload .plupload_filelist {
+  margin: 0;
+  -webkit-box-shadow: 0 0 3px #ababab inset;
+  -moz-box-shadow: 0 0 3px #ababab inset;
+  box-shadow: 0 0 3px #ababab inset;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.plupload .plupload_filelist .plupload_file_name {
+  width: 40%;
+}
+.row{
+  margin-bottom:20px;
+}
+
+    </style>
+  </head>
+  <body>
+
+  <div class="container">
+    <div class="row hide">
+      <div class="twelve columns">
+        <h1>Please folow all the steps to add your properties to our Estate agency</h1>
+
+        <hr>
+      </div>
+    </div>
+    <div class="row show" style='display:none;'>
+      <div class="twelve columns">
+        <h1>Contact us. <?php echo $id; ?></h1>
+
+        <hr>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="row hide">
+
+      <div class="six columns">
+        <h2 id="numero1" class="so-awesome">Informations</h2>
+      </div>
+
+      <div class="six columns">
+        <img  src="images/owner/information.jpg">
+      </div>
+   
+    </div>
+ 
+    
+
+    <div class="row hide">
+
+      <div class="six columns">
+        <img  src="images/owner/photo.jpg">
+      </div>
+
+      <div class="six columns">
+        <h2 id="numero2" class="so-awesome">Take pictures</h2>
+      </div>
+   
+    </div>
+ 
+   
+
+   <div class="row">
+
+      <div class="twelve columns">
+        <h2 id="numero3" class="so-awesome">Upload it on the website</h2>
+        <div class="plupload" ></div>
+      </div>
+
+      
+      
+    </div>
+
+    
+
+    
+
+    
+
+     <div class="row hide">
+      <div class="twelve columns">
+        <h3 id="numero7">Contact Us</h3>
+        
+      </div>
+
+    </div>
+
+    
+
+    
+
+  </div>
+      <!-- Tip Content -->
+    <ol id="joyRideTipContent">
+      <li data-class="so-awesome" data-text="Next" class="custom">
+        <h2>Step #1</h2>
+        <p>Collect all the data that you have and send it to us into the comment box</p>
+      </li>
+      <li data-id="numero2" data-button="Next" data-options="tipAnimation:fade">
+        <h2>Step #2</h2>
+        <p>Take 4 pictures minimum of your property</p>
+      </li>
+      <li data-id="numero3" data-button="Next" data-options="">
+        <h2>Step #3</h2>
+        <p>Upload pictures with the Image Uploader</p>
+      </li>
+     
+      <li data-id="numero5" data-button="Next" data-button="Close">
+        <h2>Step #4</h2>
+        <p>Now we are ready to add your properties. See you soon. We will contact you.</p>
+      </li>
+       <li data-id="numero7" data-button="Next" data-button="Close">
+        <h2>Step #4</h2>
+        <p>Now you are ready to do it. See you soon. We will contact you.</p>
+      </li>
+      
+    </ol>
+
+    <!-- Run the plugin -->
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/modernizr.mq.js"></script>
+    <script type="text/javascript" src="js/jquery.joyride-2.0.3.js"></script>
+    <script>
+     /* $(window).load(function() {
+        $('#joyRideTipContent').joyride({
+          autoStart : true,
+          
+        modal:true,
+        expose: true
+        });
+      });*/
+    </script>
+      <script src="management/js/plugins/plUpload/plupload.full.js"></script>
+    <script src="management/js/plugins/plUpload/jquery.plupload.queue/jquery.plupload.queue.js"></script>
+    <script>
+      $(document).ready(function() {
+        //var info = $('.hide').length;
+          //alert('info');
+
+        var id = '<?php echo $id; ?>';
+        $('.plupload').pluploadQueue({
+          runtimes : 'html5,gears,flash,silverlight,browserplus',
+          url : "management/upload/uploadOwner.php?id="+id,
+          max_file_size : '10mb',
+          chunk_size : '1mb',
+          unique_names : true,
+          resize : {width : 320, height : 240, quality : 90},
+          filters : [
+            {title : "Image files", extensions : "jpg,gif,png"},
+            {title : "Zip files", extensions : "zip"}
+          ],
+          flash_swf_url : 'management/js/plugins/plUpload/plupload.flash.swf',
+          silverlight_xap_url : 'management/js/plugins/plUpload/plupload.silverlight.xap'
+        });
+        $(".plupload_header").remove();
+        $(".plupload_progress_container").addClass("progress").addClass('progress-striped');
+        $(".plupload_progress_bar").addClass("bar");
+        $(".plupload_button").each(function(e){
+          if($(this).hasClass("plupload_add")){
+            $(this).attr("class", 'btn btn-primary btn-alt pl_add btn-small');
+          } else {
+            $(this).attr("class", 'btn btn-success btn-alt pl_start btn-small');
+          }
+        });
+        
+      });
+    </script>
+
+
+  </body>
+</html>

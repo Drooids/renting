@@ -1,0 +1,571 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="ThemeFuse">
+<meta name="keywords" content="">
+
+<title>HomeQuest - Homepage</title>
+<link href='http://fonts.googleapis.com/css?family=Lato:400italic,400,700|Bitter' rel='stylesheet'>
+
+<link href="style.css" media="screen" rel="stylesheet">
+<link href="screen.css" media="screen" rel="stylesheet">
+
+<!-- Mobile optimized -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="js/libs/modernizr-2.5.3.min.js"></script>
+<script src="js/libs/respond.min.js"></script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/general.js"></script>
+<script src="js/preloadCssImages.js"></script>
+<script src="js/jquery.tools.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+
+<script src="js/slides.min.jquery.js"></script>
+<script>
+	jQuery(document).ready(function($) {
+			$('.header_slider').slides({
+
+				play: 5000,
+				pause: 3500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-90
+					},200);
+					if (window.console && console.log) {
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+	});
+</script>
+
+<link href="css/cusel.css" rel="stylesheet">
+<script src="js/cusel-min.js"></script>
+<script src="js/jScrollPane.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+
+<script src="js/jquery.dependClass.js"></script>
+<script src="js/jquery.slider-min.js"></script>
+<link href="css/jslider.css" rel="stylesheet">
+
+<script src="js/jquery.jcarousel.min.js"></script>
+<link rel="stylesheet" href="images/skins/tango/skin.css">
+
+<!--[if IE 7]><link rel="stylesheet" href="css/ie.css><![endif]-->
+<link href="custom.css" media="screen" rel="stylesheet">
+</head>
+
+<body>
+<div class="body_wrap">
+
+<div class="header" style="background-image:url(images/header_grass_sky.jpg);">
+<div class="header_inner">
+	<div class="container_12">
+
+	<div class="header_top">
+    
+        <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <h1>Home Quest - Real Estate</h1>
+        </div>
+        
+        <div class="topmenu">
+            <ul class="dropdown">
+                <li class="menu-item-home"><a href="index.html"><span>Home</span></a></li>
+                <li><a href="properties-list.html"><span>Properties</span></a></li>
+                <li><a href="search.html"><span>Search</span></a></li>
+                <li><a href="news.html"><span>News</span></a></li>
+                <li><a href="blog.html"><span>Blog</span></a></li>            
+                <li class="current-menu-ancestor"><a href="#"><span>Pages</span></a>
+                    <ul>
+                        <li><a href="#"><span>Shortcodes</span></a>
+                            <ul>
+                                <li><a href="shortcodes-text.html"><span>Text &amp; Images</span></a></li>
+                                <li><a href="shortcodes-buttons.html"><span>Buttons &amp; Lists</span></a></li> 
+                                <li><a href="shortcodes-charts.html"><span>Charts</span></a></li>  
+                                <li><a href="shortcodes-columns.html"><span>Columns</span></a>
+									<ul>
+										<li><a href="shortcodes-columns-full.html"><span>Full Width</span></a></li>
+										<li><a href="shortcodes-columns-full2.html"><span>Full width with Gallery</span></a></li>
+									</ul>
+								</li>  
+                                <li><a href="shortcodes-lightbox.html"><span>Lightbox</span></a></li>
+                                <li><a href="shortcodes-media.html"><span>Video &amp; Image Sliders</span></a></li>
+                                <li><a href="shortcodes-maps.html"><span>Google Maps</span></a></li>
+                                <li><a href="shortcodes-tables.html"><span>Tables &amp; Boxes</span></a></li>
+                                <li><a href="shortcodes-tabs.html"><span>Tabs &amp; Toggles</span></a></li>
+                                <li><a href="shortcodes-typography.html"><span>Typography</span></a></li>
+                                <li><a href="shortcodes-widgets.html"><span>Widgets</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="current-menu-ancestor"><a href="#"><span>Header Styles</span></a>
+                            <ul>
+                                <li><a href="index.html"><span>Default</span></a></li>
+                                <li class="current-menu-item"><a href="index-2.html"><span>Image: Grass&amp;Sky</span></a></li>
+                                <li><a href="index-3.html"><span>Image: Wood</span></a></li>
+                                <li><a href="index-4.html"><span>Pattern: Green BG</span></a></li>
+                                <li><a href="index-5.html"><span>Pattern: Purple BG</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li><a href="contact.html"><span>Contact</span></a></li>
+            </ul>
+        </div>
+        
+        <div class="header_phone">
+        	<a href="#" id="my_saved_offers">MY SAVED OFFERS <em>23</em></a> 
+			<span>1-800-531-HOME</span>
+        </div>
+        
+        <div class="clear"></div>
+    </div>
+    
+    <div class="header_bot">
+    	
+        
+		<div class="search_home">
+        	<p class="search_title"><strong>SEARCH FOR HOMES</strong></p>
+            
+            <form action="#" method="post" class="form_search">
+            	<div class="row rowInput">
+                	<label class="label_title">City / Town:</label>
+                    <input type="text" name="location" value="">
+                </div>
+                
+                <div class="row form_switch">
+                	<label class="label_title">Transaction:</label>
+                    
+                    <div class="switch">
+                        <label for="switch1" class="cb-enable selected"><span>Sale</span></label>
+                        <label for="switch2" class="cb-disable"><span>Rent</span></label>
+                        <input type="radio" id="switch1" name="field" checked>
+                        <input type="radio" id="switch2" name="field">
+                    </div>
+                </div>                
+                	
+                
+                <div class="row selectField">
+                	<label class="label_title">No of rooms:</label>
+                    
+                    	<select class="select_styled" name="search_no_beds" id="search_no_beds" title="Beds">
+                        		<option value="0">Beds</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="other">5+</option>
+                        </select>
+                        
+                        <select class="select_styled" name="search_no_baths" id="search_no_baths" title="Baths">
+                        		<option value="0">Baths</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="other">5+</option>
+                        </select>
+                </div>
+                
+                <div class="row rangeField">
+                	<div class="range-slider">
+                    <input id="price_range" type="text" name="price_range" value="200000;750000">
+                    </div>                   
+                    <div class="clear"></div>
+                </div>
+                
+                <div class="row submitField">
+                	<input type="submit" value="FIND PROPERTIES" id="search_submit" class="btn_search">
+                </div>
+                
+            </form>
+			<script >
+						jQuery(document).ready(function($) {
+							// Switch Type
+							$(".cb-enable").click(function(){
+								var parent = $(this).parents('.switch');
+								$(parent).removeClass('switch_off');								
+								$('.cb-disable',parent).removeClass('selected');
+								$(this).addClass('selected');								
+							});
+							$(".cb-disable").click(function(){
+								var parent = $(this).parents('.switch');
+								$(parent).addClass('switch_off');
+								$('.cb-enable',parent).removeClass('selected');
+								$(this).addClass('selected');								
+							});
+							
+							// Price Range Input
+                     		$("#price_range").slider({ 
+					  			from: 0,
+								to: 1000000,
+								scale: [0, '|', '250k', '|', '500k', '|', '750k', '|', '1Mil'],
+								limits: false, 
+								step: 500,
+								smooth: true,
+								dimension: '&nbsp;$',
+								skin: "round_gold"
+							});
+						});
+            </script>            
+        </div>     
+    
+    	<div class="header_slider">
+        	<span class="slider_ribbon"></span>
+        	<div class="slides_container">
+            	<div class="slide">
+					<a href="properties-details.html"><img src="images/temp/home_slide_5.jpg" width="645" height="407" alt=""></a>
+					<div class="caption"><p>Sydney Residence - 4 beds, 3 baths:  <span class="price">$ 789,000</span></p></div>
+			  	</div>
+                <div class="slide">
+					<a href="properties-details.html"><img src="images/temp/home_slide_2.jpg" width="645" height="407" alt=""></a>
+					<div class="caption"><p>Golf Residence - 10 beds, 5 baths:  <span class="price">$ 1 789,000</span></p></div>
+			  	</div>
+                <div class="slide">
+					<a href="properties-details.html"><img src="images/temp/home_slide_3.jpg" width="645" height="407" alt=""></a>
+					<div class="caption"><p>NY, Brooklin Residence - 3 beds, 2 baths:  <span class="price">$ 320,000</span></p></div>
+			  	</div>
+                <div class="slide">
+					<a href="properties-details.html"><img src="images/temp/home_slide_1.jpg" width="645" height="407" alt=""></a>
+					<div class="caption"><p>Sydney Residence - 4 beds, 3 baths:  <span class="price">$ 789,000</span></p></div>
+			  	</div>
+                <div class="slide">
+					<a href="properties-details.html"><img src="images/temp/home_slide_4.jpg" width="645" height="407" alt=""></a>
+					<div class="caption"><p>Sydney Residence - 4 beds, 3 baths:  <span class="price">$ 789,000</span></p></div>
+			  	</div>
+          </div>
+          
+        </div>    	
+		        
+    </div>
+    
+    <div class="clear"></div>
+    </div>
+</div>    
+</div>
+<!--/ header -->
+
+<!-- carousel before content -->
+<div class="before_content">
+	<div class="container_12">
+    	<h2>Latest added Properties</h2>
+        
+        	<div class="carusel_list">
+				<ul id="latest_properties" class="jcarousel-skin-tango">					
+                    <li>
+                        <div class="item_image"><a href="properties-details.html"><img src="images/temp/property_01.jpg" width="218" height="125" alt=""></a></div>
+                        <div class="item_row item_type"><span>Property Type:</span> <a href="#"><strong>Apartment</strong></a></div>
+                        <div class="item_row item_price"><span>Asking Price:</span> <strong>$295,000</strong></div>
+                        <div class="item_row item_rooms"><span>Rooms:</span> <strong>3 beds, 2 baths</strong></div>
+                        <div class="item_row item_location"><span>City / Town:</span> <strong>Waterford, NY</strong></div>
+                        <div class="item_row item_view"><a href="properties-details.html" class="btn_view">view property</a></div>
+                    </li>
+                    <li>
+                        <div class="item_image"><a href="properties-details.html"><img src="images/temp/property_02.jpg" width="218" height="125" alt=""></a></div>
+                        <div class="item_row item_type"><span>Property Type:</span> <a href="#"><strong>Villa</strong></a></div>
+                        <div class="item_row item_price"><span>Asking Price:</span> <strong>$655,000</strong></div>
+                        <div class="item_row item_rooms"><span>Rooms:</span> <strong>6 beds, 3 baths</strong></div>
+                        <div class="item_row item_location"><span>City / Town:</span> <strong>Concord, NH</strong></div>
+                        <div class="item_row item_view"><a href="properties-details.html" class="btn_view">view property</a></div>
+                    </li>
+                    <li>
+                        <div class="item_image"><a href="properties-details.html"><img src="images/temp/property_03.jpg" width="218" height="125" alt=""></a></div>
+                        <div class="item_row item_type"><span>Property Type:</span> <a href="#"><strong>Studio</strong></a></div>
+                        <div class="item_row item_price"><span>Asking Price:</span> <strong>$139,000</strong></div>
+                        <div class="item_row item_rooms"><span>Rooms:</span> <strong>1 beds, 1 baths</strong></div>
+                        <div class="item_row item_location"><span>City / Town:</span> <strong>Boston, MS</strong></div>
+                        <div class="item_row item_view"><a href="properties-details.html" class="btn_view">view property</a></div>
+                    </li>
+                    <li>
+                        <div class="item_image"><a href="properties-details.html"><img src="images/temp/property_04.jpg" width="218" height="125" alt=""></a></div>
+                        <div class="item_row item_type"><span>Property Type:</span> <a href="#"><strong>Single Family</strong></a></div>
+                        <div class="item_row item_price"><span>Asking Price:</span> <strong>$1,249,000</strong></div>
+                        <div class="item_row item_rooms"><span>Rooms:</span> <strong>7 beds, 3&frac12; baths</strong></div>
+                        <div class="item_row item_location"><span>City / Town:</span> <strong>Hollywood, CA</strong></div>
+                        <div class="item_row item_view"><a href="properties-details.html" class="btn_view">view property</a></div>
+                    </li>
+                    <li>
+                        <div class="item_image"><a href="properties-details.html"><img src="images/temp/property_07.jpg" width="218" height="125" alt=""></a></div>
+                        <div class="item_row item_type"><span>Property Type:</span> <a href="#"><strong>Land</strong></a></div>
+                        <div class="item_row item_price"><span>Asking Price:</span> <strong>$1,180,000 </strong></div>
+                        <div class="item_row item_rooms"><span>Size Sq. Ft.:</span> <strong>16,117</strong></div>
+                        <div class="item_row item_location"><span>City / Town:</span> <strong>San Diego, CA</strong></div>
+                        <div class="item_row item_view"><a href="properties-details.html" class="btn_view">view property</a></div>
+                    </li>
+                    <li>
+                        <div class="item_image"><a href="properties-details.html"><img src="images/temp/property_06.jpg" width="218" height="125" alt=""></a></div>
+                        <div class="item_row item_type"><span>Property Type:</span> <strong>Apartment</strong></div>
+                        <div class="item_row item_price"><span>Asking Price:</span> <strong>$295,000</strong></div>
+                        <div class="item_row item_rooms"><span>Rooms:</span> <strong>3 beds, 2 baths</strong></div>
+                        <div class="item_row item_location"><span>City / Town:</span> <strong>Waterford, NY</strong></div>
+                        <div class="item_row item_view"><a href="properties-details.html" class="btn_view">view property</a></div>
+                    </li>                    
+                </ul>
+			</div>
+
+			<script>
+                jQuery(document).ready(function($) {
+                    $('#latest_properties').jcarousel({
+                        easing: 'easeOutBack',
+                        animation: 600,
+						scroll: 1
+                        });
+                    });
+            </script>
+   		
+  </div>
+</div>
+<!--/ carousel before content -->
+
+<div class="middle">
+<div class="container_12">
+	
+    <!-- page content -->
+	<div class="entry">
+
+        <br>
+
+        <div class="col col_1">
+        <h3 class="title_up">WHAT ARE YOU LOOKING FOR?</h3>
+        </div>	
+            
+        <div class="col col_1_2">
+        <div class="inner">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam <a href="#">voluptatem quia voluptas</a> sit aspernatur aut odit aut fugit, sed quia </p>
+        </div>
+        </div>
+        
+        <div class="col col_1_2">
+        <div class="inner">
+            <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsamsit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt: um, totam rem aperiam, eaque ipsa quae</p>
+        </div>
+        </div>
+        <div class="divider_space_thin"></div>
+        
+        <div class="col col_1_3">
+        <div class="inner"> <a href="#"><img src="images/property_sale.png" width="137" height="137" alt="Property for SALE" class="alignleft"></a>
+            <div class="text-block-1">
+                <strong>PROPERTIES FOR <span>SALE</span></strong>
+              <p><a href="#" class="link-more2">View all Properties >></a></p>
+            </div>
+        </div>
+        </div>
+        
+        <div class="col col_1_3">
+        <div class="inner"> <a href="#"><img src="images/property_rent.png" width="137" height="137" alt="APARTMENTS for RENT" class="alignleft"></a>
+            <div class="text-block-1">
+                <strong>APARTMENTS FOR <span>RENT</span></strong>
+              <p><a href="#" class="link-more2">View all Properties >></a></p>
+            </div>
+        </div>
+        </div>
+        
+        <div class="col col_1_3">
+        <div class="inner"> <a href="#"><img src="images/property_lease.png" width="137" height="137" alt="OFFICE SPACE for LEASE" class="alignleft"></a>
+            <div class="text-block-1">
+                <strong>OFFICE SPACE FOR <span>LEASE</span></strong>
+              <p><a href="#" class="link-more2">View all Office Spaces >></a></p>
+            </div>
+        </div>
+        </div>
+        <div class="divider_space"></div>
+    
+    </div>
+    <!--/ page content -->
+    
+    <!-- content -->
+    <div class="grid_8 content">
+    	
+        <div class="post-item">
+        	<div class="post-title"><h2><em>From the Blog:</em> <a href="blog-details.html">Best Properties for 2011 Fall</a></h2></div>
+        	<div class="post-image"><img src="images/temp/entry_1.jpg" alt="" width="219" height="156"></div>
+       	  	<div class="post-short">            	
+   	  	  		<div class="post-meta-top"><span class="meta-date">Thu, Nov 31, 11</span> Posted by: <span class="author">Mike Jenkins</span></div>
+            	<div class="post-descr">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiaem, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo odit aut fugit otam rem aperiaem, eaque ipsa quae ab illo inventore...</p>
+                </div>
+                <div class="post-meta-bot"><a href="#" class="link-more">Continue reading >></a> <a href="#" class="link-more2">All Blog Posts >></a></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="post-item">
+        	<div class="post-title"><h2><em>Industry News:</em> <a href="blog-details.html">Fake residences sold to trusting buyers</a></h2></div>
+        	<div class="post-image"><img src="images/temp/entry_2.jpg" alt="" width="219" height="156"></div>
+       	  	<div class="post-short">            	
+   	  	  		<div class="post-meta-top"><span class="meta-date">Wed, Nov 30, 11</span> Posted by: <span class="author">Sylvia Morris</span></div>
+            	<div class="post-descr">
+                <p>Donde omnis iste natus error sit voluptatem accusantium ser doloremque laudantium, totam rem aperiaem, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo odit aut fugit natus error sit voluptatem accusantium ser doloremque ...</p>
+                </div>
+                <div class="post-meta-bot"><a href="#" class="link-more">Continue reading >></a> <a href="#" class="link-more2">All News Posts >></a></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+    </div>
+    <!--/ content -->
+    
+    <!-- sidebar -->
+    <div class="grid_4 sidebar">
+    	
+        <div class="widget-container widget_recent_comments">
+			<h3 class="widget-title">Latest Discussions:</h3>
+				<ul>
+					<li class="recentcomments">
+                    <a href="post-details.html#comment-1">Home Loan interests have grown ... once again!</a> 
+                    <div class="comment-meta"><span class="author">by <a href="#" rel="external nofollow" class="url">Logan Finch</a></span> <span class="comment-date">23 min ago</span></div>
+                    </li>
+                    <li class="recentcomments">
+                    <a href="post-details.html#comment-2">Properties being sold at loss by bankrupt realtors</a> 
+                    <div class="comment-meta"><span class="author">by <a href="#" rel="external nofollow" class="url">Julia Styles</a></span> <span class="comment-date">45 min ago</span></div>
+                    </li>
+                    <li class="recentcomments">
+                    <a href="post-details.html#comment-2">What’s better: Buy or Rent?</a> 
+                    <div class="comment-meta"><span class="author">by <a href="#" rel="external nofollow" class="url">Keith Verhoeven</a></span> <span class="comment-date">45 min ago</span></div>
+                    </li>
+                    <li class="recentcomments">
+                    <a href="post-details.html#comment-2">Rumors keep rising about the new merge between Themefuse & WP...</a> 
+                    <div class="comment-meta"><span class="author">by <a href="#" rel="external nofollow" class="url">Rachel Simmons</a></span> <span class="comment-date">1 day ago</span></div>
+                    </li>
+                    <li class="recentcomments">
+                    <a href="post-details.html#comment-2">Lovely residence by RHH Architects being sold on our site</a> 
+                    <div class="comment-meta"><span class="author">by <a href="#" rel="external nofollow" class="url">Julia Styles</a></span> <span class="comment-date">2 days ago</span></div>
+                    </li>
+                </ul>
+                
+                <div><a href="blog.html" class="btn_view">VIEW ALL POSTS</a></div>
+		</div>
+        
+        
+    </div>
+    <!--/ sidebar -->
+    <div class="clear"></div>
+    
+    
+</div>
+</div>
+<!--/ middle -->
+
+<div class="footer">
+<div class="footer_inner">
+	<div class="container_12">
+    
+    <div class="f_col_1">
+        	
+            <div id="categories-3" class="widget-container widget_categories">
+            	<h3 class="widget-title">PROPERTIES</h3>
+                    <ul>
+                      <li><a href="#">Villas for Sale</a></li>
+                        <li><a href="#">Apartments for Rent</a></li>
+                        <li><a href="#">Office Space</a></li>
+                        <li><a href="#">Search for one</a></li>
+                        <li><a href="#">Latest offers</a></li>
+                    </ul>
+			</div>
+                
+        </div>
+        <!--/ footer col 1 -->
+        
+        <div class="f_col_2">
+        	
+			<div class="widget-container widget_pages">
+				<h3 class="widget-title">ABOUT US</h3>
+                        <ul>
+                            
+                	      <li><a href="#">Why HomeQuest?</a></li>
+                          <li><a href="#">Our Experience</a></li>
+                          <li><a href="#">Our Expertise</a></li>
+                          <li><a href="#">Our Location</a></li>
+                          <li><a href="#">Get in touch</a></li>
+                        </ul>
+			</div>
+            
+        </div>
+        <!--/ footer col 2 -->
+        
+        <div class="f_col_3">
+        	
+			<div class="widget-container widget_twitter">
+				<h3>From Twitter</h3>   
+               
+  		    	<div class="tweet_item">
+                	<div class="tweet_image"><img src="images/temp/twitter_avatar.png" width="30" height="30" alt=""></div>
+                    <div class="tweet_text">
+                    	<div class="inner">
+		    	  		<a href="#">@LesPaul:</a> the guitar's probably worth at least $25k. Interested?
+                    	</div>
+                    </div>
+                    <div class="clear"></div>
+	  		  	</div>   
+                
+                <div class="tweet_item">
+                	<div class="tweet_image"><img src="images/temp/twitter_avatar.png" width="30" height="30" alt=""></div>
+                    <div class="tweet_text">
+                    	<div class="inner">
+		    	  		<a href="#">@Serendipity:</a> knowing you, every bit of time spent on that car is like a vacation in paradise ;)</div>
+                    </div>
+                    <div class="clear"></div>
+	  		  	</div>
+                
+			</div>            
+            
+        </div>        
+        <!--/ footer col 3 -->
+        
+        <div class="f_col_4">      	
+           
+            
+            <!-- widget contacts -->
+                    <div class="widget-container widget_contact">                    
+                    	<h3>Contact Us</h3>     
+                                           
+						<div class="contact-address">
+                            <div class="address">589 Roadhill Boulevard<br> Venice Beach, CA 90291, USA</div>
+                        </div>                            
+                    </div>
+				<!--/ widget contacts -->           
+          	
+            
+            <div class="footer_social">
+                	<a href="#"><img src="images/icons/social_facebook_16.png" alt="" width="16" height="16"></a>
+                	<a href="#"><img src="images/icons/social_twitter_16.png" alt="" width="16" height="16"></a>
+                    <a href="#"><img src="images/icons/social_rss_16.png" alt="" width="16" height="16"></a>
+				<div class="clear"></div>
+		  	</div>
+            
+			<div class="copyright">Made by <a href="http://themefuse.com">Themefuse.com</a></div>
+            
+      	</div>
+        <!--/ footer col 4 -->
+        
+        <div class="clear"></div>
+    	        
+    </div>
+</div>    
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Login | Easy Com Admin Panel</title>
+		<meta name="description" content="">
+		<meta name="author" content="Easycom | www.easycom-media.com">
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- CSS styles -->
+		<link rel='stylesheet' type='text/css' href='css/organon-blue.css'>
+		
+		<!-- Fav and touch icons -->
+		<link rel="shortcut icon" href="img/icons/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="img/icons/apple-touch-icon-57-precomposed.png">
+		
+		<!-- JS Libs -->
+		<script type="text/javascript" src="jquery-1.5.2.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery.js"><\/script>')</script>
+		<script src="js/libs/modernizr.js"></script>
+		<script src="js/libs/selectivizr.js"></script>
+		<script>
+$(document).ready(function() {
+	
+	$("#login").click(function() {
+	
+		var action = $("#form1").attr('action');
+		var form_data = {
+			username: $("#username").val(),
+			password: $("#password").val(),
+			is_ajax: 1
+		};
+		
+		$.ajax({
+			type: "POST",
+			url: action,
+			data: form_data,
+			success: function(response)
+			{	response = response.replace(/\s+/g, '');
+				if(response == 'success')
+					$("#form1").slideUp('slow', function() {
+						$("#message").html("<p class='success'>You have logged in successfully!</p>");
+						window.location.replace("../management/index.php");
+					});
+				else
+					$("#message").html("<p class='error'>Invalid username and/or password.</p>");	
+			}
+		});
+		
+		return false;
+	});
+	
+});
+</script>
+	</head>
+	<body class="login-page">
+		
+		<!-- Main login container -->
+		<div class="login-container">
+			
+			<!-- Login page logo -->
+			<h1><a class="brand" href="#">Admin Panel by Easy Com</a></h1>
+			
+			<section>
+				
+				<!-- Login form -->
+				<form id='form1' method="post" action="php/login.php">
+					<fieldset>
+						<div class="control-group">
+							<label class="control-label" for="login">Username</label>
+							<div class="controls">
+								<input id="username" type="text" placeholder="Your username" name="username">
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="password">Password</label>
+							<div class="controls">
+								<input id="password" type="password" placeholder="Password" name="password">
+								<label class="checkbox">
+									<input id="optionsCheckbox" type="checkbox" value="option1"> Remember me
+								</label>
+							</div>
+						</div>
+					</fieldset>
+					<button class="btn btn-primary btn-alt" id='login' type="submit"><span class="awe-signin"></span> Log in</button>
+				</form>
+				<!-- /Login form -->
+				
+			</section>
+			 <div id="message" style='margin-top: 20px; text-align:center;'></div>
+			<!-- Login page navigation -->
+			<nav>
+				<ul>
+					<li><a href="#">Lost password?</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">Back to page</a></li>
+				</ul>
+			</nav>
+			<!-- Login page navigation -->
+			
+		</div>
+		<!-- /Main login container -->
+		
+	</body>
+</html>

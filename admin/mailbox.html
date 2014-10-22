@@ -1,0 +1,1141 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ebro Admin Template v1.0</title>
+		
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		
+	<!-- bootstrap framework-->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<!-- todc-bootstrap -->
+		<link rel="stylesheet" href="css/todc-bootstrap.min.css">
+	<!-- font awesome -->        
+		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<!-- flag icon set -->        
+		<link rel="stylesheet" href="img/flags/flags.css">
+	<!-- retina ready -->
+		<link rel="stylesheet" href="css/retina.css">	
+	
+	<!-- aditional stylesheets -->
+		<!-- responsive table -->
+			<link href="js/lib/FooTable/css/footable.core.css" rel="stylesheet" type="text/css"/>
+
+	<!-- ebro styles -->
+		<link rel="stylesheet" href="css/style.css">
+	<!-- ebro theme -->
+		<link rel="stylesheet" href="css/theme/color_1.css" id="theme">
+		
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+		<script src="js/ie/html5shiv.js"></script>
+		<script src="js/ie/respond.min.js"></script>
+		<script src="js/ie/excanvas.min.js"></script>
+	<![endif]-->
+
+	<!-- custom fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+			
+	</head>
+	<body class="boxed pattern_1 sidebar_narrow sidebar_hidden">
+		
+		<div id="wrapper_all">
+			<header id="top_header">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6 col-sm-2">
+							<a href="dashboard1.html" class="logo_main" title="Ebro Admin Template:"><img src="img/logo_main.png" alt=""></a>
+						</div>
+						<div class="col-sm-push-4 col-sm-3 text-right hidden-xs">
+							<div class="notification_dropdown dropdown">
+								<a href="#" class="notification_icon dropdown-toggle" data-toggle="dropdown">
+									<span class="label label-danger">8</span>
+									<i class="icon-comment-alt icon-2x"></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="dropdown_heading">Comments</div>
+										<div class="dropdown_content">
+											<ul class="dropdown_items">
+												<li>
+													<h3><span class="small_info">12:43</span><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet&hellip;</p>
+												</li>
+												<li>
+													<h3><span class="small_info">Today</span><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet&hellip;</p>
+												</li>
+												<li>
+													<h3><span class="small_info">14 Aug</span><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet&hellip;</p>
+												</li>
+											</ul>
+										</div>
+										<div class="dropdown_footer"><a href="#" class="btn btn-sm btn-default">Show all</a></div>
+									</li>
+								</ul>
+							</div>
+							<div class="notification_separator"></div>
+							<div class="notification_dropdown dropdown">
+								<a href="#" class="notification_icon dropdown-toggle" data-toggle="dropdown">
+									<span class="label label-danger">12</span>
+									<i class="icon-envelope-alt icon-2x"></i>
+								</a>
+								<ul class="dropdown-menu dropdown-menu-wide">
+									<li>
+										<div class="dropdown_heading">Messages</div>
+										<div class="dropdown_content">
+											<ul class="dropdown_items">
+												<li>
+													<h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+													<p class="large_info">Sean Walter, 24.05.2014</p>
+													<i class="icon-exclamation-sign indicator"></i>
+												</li>
+												<li>
+													<h3><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aliquam assumenda&hellip;</p>
+													<p class="large_info">Sean Walter, 24.05.2014</p>
+												</li>
+												<li>
+													<h3><a href="#">Lorem ipsum dolor&hellip;</a></h3>
+													<p>Lorem ipsum dolor sit amet, consectetur&hellip;</p>
+													<p class="large_info">Sean Walter, 24.05.2014</p>
+													<i class="icon-exclamation-sign indicator"></i>
+												</li>
+											</ul>
+										</div>
+										<div class="dropdown_footer">
+											<a href="#" class="btn btn-sm btn-default">Show all</a>
+											<div class="pull-right dropdown_actions">
+												<a href="#"><i class="icon-refresh"></i></a>
+												<a href="#"><i class="icon-cog"></i></a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-push-4 col-sm-3">
+							<div class="pull-right dropdown">
+								<a href="#" class="user_info dropdown-toggle" title="Jonathan Hay" data-toggle="dropdown">
+									<img src="img/user_avatar.png" alt="">
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="user_profile.html">Profile</a></li>
+									<li><a href="javascript:void(0)">Another action</a></li>
+									<li><a href="login_page.html">Log Out</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-pull-6 col-sm-4">
+							<form class="main_search">
+								<input type="text" id="search_query" name="search_query" class="typeahead form-control">
+								<button type="submit" class="btn btn-primary btn-xs"><i class="icon-search icon-white"></i></button>
+							</form> 
+						</div>
+					</div>
+				</div>
+			</header>						
+			<nav id="top_navigation" class="text_nav">
+				<div class="container">
+					<ul id="text_nav_h" class="clearfix j_menu top_text_nav">
+						<li>
+							<a href="javascript:void(0)">Dashboard</a>
+							<ul>
+								<li><a href="dashboard1.html">Dashboard 1</a></li>
+								<li><a href="dashboard2.html">Dashboard 2</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Forms</a>
+							<ul>
+								<li><a href="form_regular_elements.html">Regular elements</a></li>
+								<li><a href="form_extended_elements.html">Extended elements</a></li>
+								<li><a href="form_multiupload.html">Multiupload</a></li>
+								<li><a href="form_validation.html">Form validation</a></li>
+								<li><a href="wizard.html">Wizard</a></li>
+								<li><a href="wysiwg.html">WYSIWG Editor</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Components</a>
+							<ul>
+								<li><a href="calendar.html">Calendar</a></li>
+								<li><a href="charts.html">Charts</a></li>
+								<li><a href="contact_list.html">Contact List</a></li>
+								<li><a href="file_manager.html">File manager</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="gmaps.html">Google Maps</a></li>
+								<li>
+									<a href="javascript:void(0)">Tables</a>
+									<ul>
+										<li><a href="datatables.html">Datatables</a></li>
+										<li><a href="regular_tables.html">Regular</a></li>
+										<li><a href="slick_grid.html">Slick Grid</a></li>
+										<li><a href="table_responsive.html">Responsive Table</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0)">UI Elements</a>
+							<ul>
+								<li><a href="alerts_buttons.html">Alerts, Buttons</a></li>
+								<li><a href="grid.html">Grid</a></li>
+								<li><a href="icons.html">Icons</a></li>
+								<li><a href="notifications.html">Notifications</a></li>
+								<li><a href="panels.html">Panels</a></li>
+								<li><a href="tabs_accordions.html">Tabs, Accordions</a></li>
+								<li><a href="tooltips_popovers.html">Tooltips, Popovers</a></li>
+								<li><a href="typography.html">Typography</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:void(0)">Other Pages</a>
+							<ul>
+								<li><a href="blank.html">Blank page</a></li>
+								<li><a href="chat.html">Chat</a></li>
+								<li><a href="contact_page.html">Contact Page</a></li>
+								<li><a href="error_404.html">Error 404</a></li>
+								<li><a href="help_faq.html">Help/Faq</a></li>
+								<li><a href="invoices.html">Invoices</a></li>
+								<li><a href="landing_page.html">Landing Page</a></li>
+								<li><a href="login_page.html">Login Page</a></li>
+								<li class="link_active"><a href="mailbox.html">Mailbox</a></li>
+								<li><a href="user_profile.html">User profile</a></li>
+								<li><a href="search_page.html">Search Page</a></li>
+								<li><a href="settings.html">Site Settings</a></li>
+							</ul>
+						</li>
+					</ul> 
+				</div>
+			</nav>
+			<!-- mobile navigation -->
+			<nav id="mobile_navigation"></nav>
+			
+			<section id="breadcrumbs">
+				<div class="container">
+					<ul>
+						<li><a href="#">Ebro Admin</a></li>
+						<li><a href="#">Other Pages</a></li>
+						<li><span>Mailbox</span></li>						
+					</ul>
+				</div>
+			</section>
+                
+			<section class="container clearfix main_section">
+				<div id="main_content_outer" class="clearfix">
+					<div id="main_content">
+						
+						<!-- main content -->
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="bordered_heading">
+									<div class="row">
+										<div class="col-sm-3 col-md-2">
+											<h1 class="heading_lg">Inbox</h1>
+										</div>
+										<div class="col-sm-4 col-md-4 mbox_table_actions">
+											<div class="btn-group btn-group-sm">
+												<button class="btn btn-default" type="button"><span class="icon-reply"></span></button>
+												<button class="btn btn-default" type="button"><span class="icon-exclamation"></span></button>
+												<button class="btn btn-default" type="button"><span class="icon-trash"></span></button>
+											</div>
+										</div>
+										<div class="col-sm-3 col-md-4 col-sm-offset-2 mbox_table_actions">
+											<input type="text" id="mailbox_search" class="form-control" placeholder="Find message">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-3 col-md-2">
+										<div class="mailbox_nav">
+											<div class="sepH_b">
+												<a data-toggle="modal" href="#newMail" class="btn btn-default btn-sm">New Email</a>
+											</div>
+											<ul class="nav nav-pills nav-stacked">
+												<li class="active"><a href="#">Inbox</a></li>
+												<li><a href="#">Outbox</a></li>
+												<li><a href="#">Important</a></li>
+												<li><a href="#">Spam</a></li>
+												<li><a href="#">Trash</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-sm-9 col-md-10">
+										<div class="mailbox_content">
+											<table id="mailbox_table" class="table toggle-square" data-filter="#mailbox_search" data-page-size="20" data-provides="rowlink">
+												<thead>
+													<tr>
+														<th><label class="checkbox-inline"><input type="checkbox" class="mbox_select_all" name="msg_sel_all"></label></th>
+														<th></th>
+														<th data-hide="phone,tablet">From</th>
+														<th>Subject</th>
+														<th data-hide="phone">Date</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="unreaded">
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Jada Conn</td>
+														<td><a href="#mbox_preview">Quaerat rerum ipsa earum unde velit.</a></td>
+														<td>today</td>
+													</tr>
+													<tr class="unreaded">
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Mrs. Adah Konopelski DVM</td>
+														<td><a href="#mbox_preview">Maxime magni vitae exercitationem.</a></td>
+														<td>today</td>
+													</tr>
+													<tr class="unreaded">
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Derick Crona IV</td>
+														<td><a href="#mbox_preview">Atque optio enim architecto veritatis corrupti.</a></td>
+														<td>yesterday</td>
+													</tr>
+													<tr class="unreaded">
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Nadia Reynolds</td>
+														<td><a href="#mbox_preview">Minima dignissimos perspiciatis veritatis molestiae perferendis.</a></td>
+														<td>yesterday</td>
+													</tr>
+													<tr class="unreaded">
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star"></span></td>
+														<td>Althea Ledner</td>
+														<td><a href="#mbox_preview">Et sed error perspiciatis magnam aliquam.</a></td>
+														<td>yesterday</td>
+													</tr>
+													<tr class="unreaded">
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Allie Zemlak</td>
+														<td><a href="#mbox_preview">Provident omnis eum quia illo.</a></td>
+														<td>yesterday</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Dr. Andreane Lowe</td>
+														<td><a href="#mbox_preview">Aut excepturi et quia dignissimos unde.</a></td>
+														<td>Nov 2</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Myrtie Block</td>
+														<td><a href="#mbox_preview">Voluptates incidunt praesentium necessitatibus aut molestiae.</a></td>
+														<td>Nov 13</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Mable Bechtelar DDS</td>
+														<td><a href="#mbox_preview">Ex quam accusantium consequatur doloribus.</a></td>
+														<td>Nov 2</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Durward Kiehn</td>
+														<td><a href="#mbox_preview">Impedit dolor ex aspernatur corrupti.</a></td>
+														<td>Nov 15</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Arnaldo Brakus</td>
+														<td><a href="#mbox_preview">Tenetur ut earum provident rerum.</a></td>
+														<td>Nov 19</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Dr. Bennett Dicki Jr.</td>
+														<td><a href="#mbox_preview">Fugiat explicabo cumque saepe.</a></td>
+														<td>Nov 25</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Mrs. Cole Wiegand III</td>
+														<td><a href="#mbox_preview">Sint unde id aliquid.</a></td>
+														<td>Nov 10</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Dr. Letha Dickinson DVM</td>
+														<td><a href="#mbox_preview">Odio unde iusto et ut.</a></td>
+														<td>Nov 17</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Kelli Schuster</td>
+														<td><a href="#mbox_preview">Occaecati sint recusandae adipisci impedit.</a></td>
+														<td>Nov 6</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star"></span></td>
+														<td>Albin Veum</td>
+														<td><a href="#mbox_preview">Ut sequi repellat.</a></td>
+														<td>Nov 9</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Eve Boyer</td>
+														<td><a href="#mbox_preview">Ipsam dolores et aspernatur temporibus nihil.</a></td>
+														<td>Nov 14</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Zackery Wyman</td>
+														<td><a href="#mbox_preview">Blanditiis quia inventore laboriosam ea non.</a></td>
+														<td>Nov 15</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Emil Kertzmann</td>
+														<td><a href="#mbox_preview">Amet quos veritatis voluptas quam.</a></td>
+														<td>Nov 15</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Mike Nicolas</td>
+														<td><a href="#mbox_preview">Impedit adipisci dolorem rerum et qui.</a></td>
+														<td>Nov 8</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Colton Parisian</td>
+														<td><a href="#mbox_preview">Dolores et provident sunt et reprehenderit.</a></td>
+														<td>Nov 7</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Ramiro Kling</td>
+														<td><a href="#mbox_preview">Exercitationem modi facilis.</a></td>
+														<td>Nov 2</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Maiya Mante</td>
+														<td><a href="#mbox_preview">Minus velit natus et.</a></td>
+														<td>Nov 7</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star"></span></td>
+														<td>Miss Cooper Rowe IV</td>
+														<td><a href="#mbox_preview">Eveniet id modi dignissimos.</a></td>
+														<td>Nov 16</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Alek Pouros</td>
+														<td><a href="#mbox_preview">Ex aperiam vel voluptatum architecto.</a></td>
+														<td>Nov 13</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Mr. Virginia Schulist DVM</td>
+														<td><a href="#mbox_preview">Quo unde deleniti non.</a></td>
+														<td>Nov 1</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star"></span></td>
+														<td>Ashly Pfeffer</td>
+														<td><a href="#mbox_preview">Reiciendis dolorum nihil ex sit.</a></td>
+														<td>Nov 25</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Lillie Roberts</td>
+														<td><a href="#mbox_preview">Harum minus numquam.</a></td>
+														<td>Nov 13</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Jaylen Grimes Sr.</td>
+														<td><a href="#mbox_preview">Sunt quam dolores.</a></td>
+														<td>Nov 20</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Glennie Douglas</td>
+														<td><a href="#mbox_preview">Dolorum ut pariatur cum dolores.</a></td>
+														<td>Nov 17</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Maegan Heller</td>
+														<td><a href="#mbox_preview">Dolor officiis harum.</a></td>
+														<td>Nov 25</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Jaqueline Lowe</td>
+														<td><a href="#mbox_preview">Inventore et quisquam ab quam.</a></td>
+														<td>Nov 14</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Ms. Christophe Kilback</td>
+														<td><a href="#mbox_preview">Quod quibusdam molestiae sed.</a></td>
+														<td>Nov 23</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Damon Herman</td>
+														<td><a href="#mbox_preview">Perspiciatis maiores quod ex.</a></td>
+														<td>Nov 12</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Albertha Metz</td>
+														<td><a href="#mbox_preview">Eum possimus animi delectus dolores.</a></td>
+														<td>Nov 5</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Abbie Roob</td>
+														<td><a href="#mbox_preview">Facere eius dolores nemo voluptatem cupiditate.</a></td>
+														<td>Nov 21</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Osborne Torphy</td>
+														<td><a href="#mbox_preview">Fugit natus enim.</a></td>
+														<td>Nov 15</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star"></span></td>
+														<td>Miss Ruthe Aufderhar DVM</td>
+														<td><a href="#mbox_preview">Autem consectetur labore.</a></td>
+														<td>Nov 7</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Alta Huels</td>
+														<td><a href="#mbox_preview">Quibusdam blanditiis beatae facilis.</a></td>
+														<td>Nov 8</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Noah Reynolds III</td>
+														<td><a href="#mbox_preview">Ipsum hic minima rerum.</a></td>
+														<td>Nov 16</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Kelli Hilll</td>
+														<td><a href="#mbox_preview">Quidem aspernatur tempora harum nemo.</a></td>
+														<td>Nov 21</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Vincenzo McKenzie</td>
+														<td><a href="#mbox_preview">Illum rerum sunt cupiditate.</a></td>
+														<td>Nov 26</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Karli Metz Sr.</td>
+														<td><a href="#mbox_preview">Eius sit pariatur repudiandae necessitatibus quisquam.</a></td>
+														<td>Nov 15</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Myrtie Kovacek</td>
+														<td><a href="#mbox_preview">Est aliquam placeat quo non.</a></td>
+														<td>Nov 4</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Dwight Kerluke</td>
+														<td><a href="#mbox_preview">Sed adipisci sit.</a></td>
+														<td>Nov 17</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Felicity Schmitt</td>
+														<td><a href="#mbox_preview">Et quaerat excepturi tempora.</a></td>
+														<td>Nov 20</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Mr. Rylan Zieme</td>
+														<td><a href="#mbox_preview">Iusto perferendis aliquam molestiae.</a></td>
+														<td>Nov 13</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Kurt Larkin</td>
+														<td><a href="#mbox_preview">Repellat delectus distinctio.</a></td>
+														<td>Nov 5</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Deonte Kuphal</td>
+														<td><a href="#mbox_preview">Explicabo cupiditate fugit molestias et.</a></td>
+														<td>Nov 9</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Dr. Ryleigh Ernser</td>
+														<td><a href="#mbox_preview">Mollitia sunt autem beatae quisquam.</a></td>
+														<td>Nov 1</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Dawn Hoppe</td>
+														<td><a href="#mbox_preview">Et est voluptatem natus accusantium.</a></td>
+														<td>Nov 12</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Bernie Sauer</td>
+														<td><a href="#mbox_preview">Omnis culpa nobis repellendus et enim.</a></td>
+														<td>Nov 15</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Lily Kiehn</td>
+														<td><a href="#mbox_preview">Magnam nisi natus commodi.</a></td>
+														<td>Nov 2</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Madalyn Bergnaum</td>
+														<td><a href="#mbox_preview">Nam esse vero est et in.</a></td>
+														<td>Nov 18</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Dr. Ludie Kihn</td>
+														<td><a href="#mbox_preview">Architecto facilis soluta quia ut aliquid.</a></td>
+														<td>Nov 5</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Dillan Towne</td>
+														<td><a href="#mbox_preview">Est quia dolorem atque tempora.</a></td>
+														<td>Nov 14</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Darryl Okuneva</td>
+														<td><a href="#mbox_preview">Qui sunt rerum.</a></td>
+														<td>Nov 19</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Belle Ankunding</td>
+														<td><a href="#mbox_preview">Nihil itaque odio.</a></td>
+														<td>Nov 3</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Ms. Reuben Wilderman II</td>
+														<td><a href="#mbox_preview">Quis ab dolorem iure.</a></td>
+														<td>Nov 26</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Mr. Rubie Marvin V</td>
+														<td><a href="#mbox_preview">Architecto sapiente blanditiis.</a></td>
+														<td>Nov 12</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Eloy Lynch</td>
+														<td><a href="#mbox_preview">Porro id autem.</a></td>
+														<td>Nov 20</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Mr. Celine Daniel</td>
+														<td><a href="#mbox_preview">In ex accusantium facilis rerum.</a></td>
+														<td>Nov 25</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Mrs. Jakayla Baumbach Sr.</td>
+														<td><a href="#mbox_preview">Sint sed id molestias aliquid.</a></td>
+														<td>Nov 25</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Electa Crooks</td>
+														<td><a href="#mbox_preview">Libero quae quaerat adipisci perspiciatis.</a></td>
+														<td>Nov 17</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Jolie Lemke</td>
+														<td><a href="#mbox_preview">Voluptatem animi dignissimos distinctio.</a></td>
+														<td>Nov 10</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Alfred Corwin</td>
+														<td><a href="#mbox_preview">Numquam quia et in facere.</a></td>
+														<td>Nov 4</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Mrs. Desmond Hackett V</td>
+														<td><a href="#mbox_preview">Perspiciatis delectus qui delectus harum.</a></td>
+														<td>Nov 11</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Kailyn Muller</td>
+														<td><a href="#mbox_preview">Impedit provident ullam sed.</a></td>
+														<td>Nov 24</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Eryn Mann</td>
+														<td><a href="#mbox_preview">Fugiat et ex aliquid et.</a></td>
+														<td>Nov 11</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Mrs. Dante Lesch</td>
+														<td><a href="#mbox_preview">Et est assumenda consequatur.</a></td>
+														<td>Nov 18</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Ms. Macy Marquardt MD</td>
+														<td><a href="#mbox_preview">Quasi aut in aliquam neque.</a></td>
+														<td>Nov 14</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Christop Emmerich</td>
+														<td><a href="#mbox_preview">Dolorum dignissimos accusantium distinctio odio.</a></td>
+														<td>Nov 5</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Miss Otto Huel</td>
+														<td><a href="#mbox_preview">Ut nam porro sit eius.</a></td>
+														<td>Nov 18</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Leanne Lubowitz</td>
+														<td><a href="#mbox_preview">Sunt rem exercitationem doloribus culpa.</a></td>
+														<td>Nov 3</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Jose Weimann</td>
+														<td><a href="#mbox_preview">Sed sint enim enim.</a></td>
+														<td>Nov 9</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Murray Smitham</td>
+														<td><a href="#mbox_preview">Aliquam quis et atque qui quo.</a></td>
+														<td>Nov 9</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Mr. Maynard Sanford</td>
+														<td><a href="#mbox_preview">Et amet qui iste.</a></td>
+														<td>Nov 23</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Dr. Zelma Thompson</td>
+														<td><a href="#mbox_preview">Unde eaque quis dignissimos.</a></td>
+														<td>Nov 21</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Daisy Hills</td>
+														<td><a href="#mbox_preview">Doloribus numquam distinctio sed modi soluta.</a></td>
+														<td>Nov 13</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Bethel Jacobi</td>
+														<td><a href="#mbox_preview">Incidunt iste similique quo est.</a></td>
+														<td>Nov 5</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Aiyana Labadie V</td>
+														<td><a href="#mbox_preview">Cupiditate qui enim quae quis provident.</a></td>
+														<td>Nov 21</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Mark Hegmann DVM</td>
+														<td><a href="#mbox_preview">Nemo natus assumenda aut.</a></td>
+														<td>Nov 24</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Dr. Faye Ledner III</td>
+														<td><a href="#mbox_preview">Ut exercitationem impedit molestiae amet.</a></td>
+														<td>Nov 20</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Robbie Goyette</td>
+														<td><a href="#mbox_preview">Tempore neque quo neque.</a></td>
+														<td>Nov 22</td>
+													</tr>
+													<tr>
+														<td class="nolink"><input type="checkbox" name="msg_sel" class="mbox_msg_select" /></td>
+														<td class="nolink mbox_star"><span class="icon-star-empty"></span></td>
+														<td>Ms. Rodrigo Zboncak I</td>
+														<td><a href="#mbox_preview">Quia praesentium modi debitis.</a></td>
+														<td>Nov 16</td>
+													</tr>
+												</tbody>
+												<tfoot class="hide-if-no-paging">
+													<tr>
+														<td colspan="5">
+															<div class="row">
+																<div class="col-sm-4">
+																	<span class="mailbox_count_msg"><b class="page_start_row">1</b>-<b class="page_end_row">20</b> of <b class="all_rows">117</b></span>
+																</div>
+																<div class="col-sm-8 text-right">
+																	<ul class="pagination pagination-sm"></ul>
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+										<div class="email_preview" id="mbox_preview" style="display:none">
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="mail_message_top">
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="pull-left">
+																	<img src="img/user_avatar.png" alt="" class="img-thumbnail">
+																</div>
+																<div class="pull-left">
+																	<h3 class="user_name">Lou Herzog</h3>
+																	<h4 class="mail_address">kfranecki@gaylord.com</h4>
+																</div>
+																<div class="mail_actions">
+																	<span class="mail_date">23 November 2013</span>
+																	<div class="btn-group btn-group-sm">
+																		<button class="btn btn-default" type="button"><span class="icon-reply"></span></button>
+																		<button class="btn btn-default" type="button"><span class="icon-exclamation"></span></button>
+																		<button class="btn btn-default" type="button"><span class="icon-trash"></span></button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="mail_message_content">
+														<p>Hello John</p>
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem atque aperiam delectus enim officiis facere molestiae eum in harum cum voluptatem blanditiis accusamus. Libero sequi assumenda doloremque molestiae nulla quod.</p>
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem atque aperiam delectus enim officiis facere molestiae eum in harum cum voluptatem blanditiis accusamus. Libero sequi assumenda doloremque molestiae nulla quod.</p>
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem atque aperiam delectus enim officiis facere molestiae eum in harum cum voluptatem blanditiis accusamus. Libero sequi assumenda doloremque molestiae nulla quod.</p>
+														<div class="mail_attachment">
+															<p class="sepH_c"><b>Attachments <span class="text-muted">(2 files - 320KB)</span></b></p>
+															<p><span class="glyphicon glyphicon-paperclip"></span> file_01.zip <a href="#" class="btn btn-xs btn-default">Save</a></p>
+															<p><span class="glyphicon glyphicon-paperclip"></span> file_02.zip <a href="#" class="btn btn-xs btn-default">Save</a></p>
+														</div>
+													</div>
+													<div class="mail_message_footer">
+														<form>
+															<textarea name="mail_reply" id="mail_reply" cols="30" rows="4" class="form-control" placeholder="Start typing here to replay or forward..."></textarea>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="newMail" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<form>
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h4 class="modal-title" id="myModalLabel">New Message</h4>
+										</div>
+										<div class="modal-body">
+											<div class="form-group">
+												<label for="mail_to">To</label>
+												<input type="text" class="form-control" name="mail_to" id="mail_to">
+											</div>
+											<div class="form-group">
+												<label for="mail_subject">Subject</label>
+												<input type="text" class="form-control" name="mail_subject" id="mail_subject">
+											</div>
+											<div class="form-group">
+												<label for="mail_message">Message</label>
+												<textarea name="mail_message" id="mail_message" cols="30" rows="6" class="form-control"></textarea>
+											</div>
+											<div class="form-group">
+												<a href="#" class="btn btn-success btn-sm"><i class="glyphicon glyphicon-plus"></i> Select files...</a>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary">Send</button>
+										</div>
+									</form>
+								 </div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<nav id="sidebar">
+					<ul id="icon_nav_v" class="side_ico_nav">
+						<li>
+							<a href="#" title="Dashboard"><i class="icon-home"></i></a>
+						</li>
+						<li>             
+							<a href="#" title="Content"><i class="icon-edit"></i></a>
+						</li>
+						<li>             
+							<a href="#" title="Users"><i class="icon-group"></i></a>
+						</li>
+						<li>             
+							<a href="#"><i class="icon-tasks"></i></a>
+						</li>
+						<li class="active">             
+							<a href="#"><i class="icon-beaker"></i></a>
+						</li>
+						<li>             
+							<a href="#"><i class="icon-book"></i></a>
+						</li>
+						<li>             
+							<a href="#"><i class="icon-tag"></i></a>
+						</li>
+						<li>             
+							<a href="#"><i class="icon-wrench"></i></a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+			<div id="footer_space"></div>
+		</div>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        &copy; 2013 Your Company
+                    </div>
+                    <div class="col-sm-8">
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li>&middot;</li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li>&middot;</li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li>&middot;</li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-1 text-right">
+                        <small class="text-muted">v1.0</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+	<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+	<!-- bootstrap framework -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- jQuery resize event -->
+		<script src="js/jquery.ba-resize.min.js"></script>
+	<!-- jquery cookie -->
+		<script src="js/jquery_cookie.min.js"></script>
+	<!-- retina ready -->
+		<script src="js/retina.min.js"></script>
+	<!-- tinyNav -->
+		<script src="js/tinynav.js"></script>
+	<!-- sticky sidebar -->
+		<script src="js/jquery.sticky.js"></script>
+	<!-- Navgoco -->
+		<script src="js/lib/navgoco/jquery.navgoco.min.js"></script>
+	<!-- jMenu -->
+		<script src="js/lib/jMenu/js/jMenu.jquery.js"></script>
+	<!-- typeahead -->
+        <script src="js/lib/typeahead.js/typeahead.min.js"></script>
+        <script src="js/lib/typeahead.js/hogan-2.0.0.js"></script>
+	
+		<script src="js/ebro_common.js"></script>
+
+		<!-- responsive table -->
+			<script src="js/lib/FooTable/js/footable.js"></script>
+			<script src="js/lib/FooTable/js/footable.filter.js"></script>
+			<script src="js/lib/FooTable/js/footable.paginate.js"></script>
+		<!-- rowlink -->
+			<script src="js/lib/jasny_plugins/bootstrap-rowlink.js"></script>
+		
+			<script src="js/pages/ebro_mailbox.js"></script>
+
+
+	<!--[if lte IE 9]>
+		<script src="js/ie/jquery.placeholder.js"></script>
+		<script>
+			$(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	
+    <!-- style switcher -->
+		<div id="style_switcher" class="switcher_open">
+            <a href="#" class="switcher_toggle"><i class="icon-cog"></i></a>
+			<div class="style_items">
+				<p class="style_title">Theme</p>
+				<ul class="clearfix" id="theme_switch">
+					<li class="style_active" style="background:#48ac2e" title="color_1">Color 1</li>
+					<li style="background:#993399" title="color_2">Color 2</li>
+					<li style="background:#168cbe" title="color_3">Color 3</li>
+					<li style="background:#d61110" title="color_4">Color 4</li>
+					<li style="background:#e96710" title="color_5">Color 5</li>
+					<li style="background:#262626" title="color_6">Color 6</li>
+					<li style="background:#01aaad" title="color_7">Color 7</li>
+					<li style="background:#9c5100" title="color_8">Color 8</li>
+					<li style="background:#e31a8f" title="color_9">Color 9</li>
+					<li style="background:#ffbb0e" title="color_10">Color 10</li>
+					<li style="background:#79be0b" title="color_11">Color 11</li>
+					<li style="background:#887171" title="color_12">Color 12</li>
+					<li style="background:#28abe2" title="color_13">Color 13</li>
+					<li style="background:#2f7138" title="color_14">Color 14</li>
+					<li style="background:#ce4627" title="color_15">Color 15</li>
+					<li style="background:#693986" title="color_16">Color 16</li>
+					<li style="background:#7f8c8d" title="color_17">Color 17</li>
+					<li style="background:#2c3e50" title="color_18">Color 18</li>
+					<li style="background:#34495e" title="color_19">Color 19</li>
+					<li style="background:#1abc9c" title="color_20">Color 20</li>
+				</ul>
+			</div>
+			<div class="style_items" id="sidebar_switch">
+				<p class="style_title">Sidebar position</p>
+				<label class="radio-inline">
+					<input type="radio" name="sidebar_position" id="sidebar_left" value="left" checked> Left
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="sidebar_position" id="sidebar_right" value="right"> Right
+				</label>
+			</div>
+			<div class="style_items" id="layout_switch">
+				<p class="style_title">Layout</p>
+				<select name="layout_style" id="layout_style" class="form-control">
+					<option value="boxed" class="hidden-sm hidden-md">Boxed</option>
+					<option value="fixed">Fixed</option>
+					<option value="full_width" class="hidden-sm hidden-md">Full Width</option>
+				</select>
+			</div>
+			<div class="style_items" id="style_pattern">
+				<p class="style_title">Pattern (boxed layout)</p>
+				<ul class="clearfix">
+					<li class="pattern_active" style="background:url(img/patterns/pattern_1.png) no-repeat 0 0" title="pattern_1">Pattern 1</li>
+					<li style="background:url(img/patterns/pattern_2.png) no-repeat 0 0" title="pattern_2">Pattern 2</li>
+					<li style="background:url(img/patterns/pattern_3.png) no-repeat 0 0" title="pattern_3">Pattern 3</li>
+					<li style="background:url(img/patterns/pattern_4.png) no-repeat 0 0" title="pattern_4">Pattern 4</li>
+					<li style="background:url(img/patterns/pattern_5.png) no-repeat 0 0" title="pattern_5">Pattern 5</li>
+					<li style="background:url(img/patterns/pattern_6.png) no-repeat 0 0" title="pattern_6">Pattern 6</li>
+					<li style="background:url(img/patterns/pattern_7.png) no-repeat 0 0" title="pattern_7">Pattern 7</li>
+					<li style="background:url(img/patterns/pattern_8.png) no-repeat 0 0" title="pattern_8">Pattern 8</li>
+					<li style="background:url(img/patterns/pattern_9.png) no-repeat 0 0" title="pattern_9">Pattern 9</li>
+					<li style="background:url(img/patterns/pattern_10.png) no-repeat 0 0" title="pattern_10">Pattern 10</li>
+				</ul>
+			</div>
+			<div class="text-center">
+				<button class="btn btn-default" id="style_reset">Reset</button>
+			</div>
+        </div>
+
+	</body>
+</html>
